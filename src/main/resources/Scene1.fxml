@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller1">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@img.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="503.0" layoutY="361.0" mnemonicParsing="false" onAction="#forward" prefWidth="80.0" text="AVANTI &gt;" />
+      <Button layoutX="232.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" prefWidth="80.0" text="ESCI" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="14.0" prefHeight="86.0" prefWidth="351.0" text="Installer traduzione Italiana di Omori" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="textWall" alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="100.0" prefHeight="236.0" prefWidth="351.0" text="Ciao! Quest'installazione ti guiderà ad applicare la nostra traduzione. Ecco alcuni prerequisiti! Ricordiamo che per poter installare la traduzione del gioco, Omori deve esser stato comprato e posseduto su Steam. Quindi con un'eventuale versione pirata del gioco, la mod non ha alcun effetto. Detto questo, clicca su AVANTI per proseguire, ESCI per uscire dall'installer." textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

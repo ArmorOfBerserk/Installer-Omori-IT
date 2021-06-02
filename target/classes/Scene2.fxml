@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller2">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@img.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonProsegui" disable="true" layoutX="503.0" layoutY="361.0" mnemonicParsing="false" onAction="#forward" prefWidth="80.0" text="AVANTI &gt;" />
+      <Button fx:id="buttonBack" layoutX="232.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="80.0" text="INDIETRO &lt;" />
+      <Label alignment="CENTER" layoutX="232.0" layoutY="14.0" prefHeight="25.0" prefWidth="351.0" text="Seleziona la cartella con il gioco installato" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textview" layoutX="232.0" layoutY="49.0" prefHeight="25.0" prefWidth="351.0" />
+      <Button fx:id="buttonFolder" layoutX="354.0" layoutY="86.0" mnemonicParsing="false" onAction="#openFolder" text="Seleziona cartella" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="117.0" prefHeight="94.0" prefWidth="351.0" text="Se il programma dovesse rilevare che la cartella di default non è corretta, si selezioni a mano il percorso nel quale è presente la cartella di installazione di Omori." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="actionLog" editable="false" layoutX="232.0" layoutY="200.0" prefHeight="155.0" prefWidth="351.0" wrapText="true" />
+      <Button fx:id="buttonInstall" layoutX="368.0" layoutY="361.0" mnemonicParsing="false" onAction="#install" prefHeight="25.0" prefWidth="80.0" text="INSTALLA" />
+   </children>
+</AnchorPane>
