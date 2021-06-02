@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -20,6 +21,20 @@
             <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <Label fx:id="textWall" alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="100.0" prefHeight="236.0" prefWidth="351.0" text="Ciao! Quest'installazione ti guiderà ad applicare la nostra traduzione. Ecco alcuni prerequisiti! Ricordiamo che per poter installare la traduzione del gioco, Omori deve esser stato comprato e posseduto su Steam. Quindi con un'eventuale versione pirata del gioco, la mod non ha alcun effetto. Detto questo, clicca su AVANTI per proseguire, ESCI per uscire dall'installer." textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="textWall" alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="100.0" prefHeight="124.0" prefWidth="351.0" text="Ciao! Quest'installazione ti guiderà ad applicare la nostra traduzione. Ecco alcuni prerequisiti! Per poter installare la traduzione del gioco, Omori deve esser stato comprato e posseduto su Steam. Quindi con un'eventuale versione pirata del gioco, la mod NON potrebbe funzionare. Detto questo, clicca su AVANTI per proseguire, ESCI per uscire dall'installer." textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" layoutX="232.0" layoutY="207.0" prefHeight="65.0" prefWidth="351.0" text=" Crediti a ArmorOfBerserk. Ringraziamenti speciali ad AlexFazio64 e Ghibbi64." textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="232.0" layoutY="282.0" prefHeight="37.0" prefWidth="263.0" text="Seguimi su GitHub!">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gitHubLink" fitHeight="50.0" fitWidth="50.0" layoutX="518.0" layoutY="276.0" onMouseClicked="#linkToGitHub" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@GitHub-Mark.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </AnchorPane>

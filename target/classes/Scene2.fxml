@@ -20,7 +20,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="textview" layoutX="232.0" layoutY="49.0" prefHeight="25.0" prefWidth="351.0" />
+      <TextField fx:id="textview" editable="false" layoutX="232.0" layoutY="49.0" prefHeight="25.0" prefWidth="351.0" />
       <Button fx:id="buttonFolder" layoutX="354.0" layoutY="86.0" mnemonicParsing="false" onAction="#openFolder" text="Seleziona cartella" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="117.0" prefHeight="94.0" prefWidth="351.0" text="Se il programma dovesse rilevare che la cartella di default non è corretta, si selezioni a mano il percorso nel quale è presente la cartella di installazione di Omori." textAlignment="CENTER" wrapText="true">
          <font>
