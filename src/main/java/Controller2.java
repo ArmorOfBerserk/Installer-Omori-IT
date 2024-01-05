@@ -103,8 +103,45 @@ public class Controller2{
         }
     }
 
+    void deleteFolder(String path){
+        File directory = new File(path);
+
+        if(directory.isDirectory()) {
+            File[] files = directory.listFiles();
+
+            // if the directory contains any file
+            if(files != null) {
+                for(File file : files) {
+
+                    // recursive call if the subdirectory is non-empty
+                    deleteFolder(file.getPath());
+                }
+            }
+        }
+
+        if(!directory.delete()) {
+            System.out.println(directory + " is NOT deleted");
+        }
+    }
+
+    void deleteFile(String path){
+        File file = new File(path);
+
+        if(file.isFile()) {
+            if(!file.delete()) {
+                System.out.println(file + " is NOT deleted");
+            }
+        }
+    }
+
     @FXML
     void install(ActionEvent event) {
+
+        //Path sarà nella cartella OMORI
+        deleteFolder(path + "/www/adm-zip-0.5.1");
+        deleteFolder(path + "/www/JSON-Patch-3.0.0");
+        deleteFolder(path + "/www/gomori");
+        deleteFolder(path + "/www/mods/gomori");
 
         UnzipFile unzipFile = new UnzipFile(actionLog);
 
@@ -117,7 +154,7 @@ public class Controller2{
 
             unzipFile.unzip(zipFile, path);
 
-            /*QUANDO HAI FINITO TUTTO, CAMBIA SCHERMATA*/
+            //QUANDO HAI FINITO TUTTO, CAMBIA SCHERMATA
 
             folderCheck.checkfile(path);
 
